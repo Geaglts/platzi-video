@@ -9,32 +9,8 @@
             href="https://fonts.googleapis.com/css?family=Muli&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="styles/main.css" />
     </head>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-            outline: none;
-        }
-
-        body {
-            font-family: "Muli", sans-serif;
-        }
-
-        .header {
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header__img {
-            width: 200px;
-            margin: 3px 0 0 10px;
-        }
-    </style>
     <body>
         <header class="header">
             <img
@@ -60,12 +36,37 @@
                                 type="checkbox"
                                 id="cbox1"
                                 value="checkbox"
-                            />Recuerdame
+                            />
+                            Recuerdame
                         </label>
                         <a href="/">Olvidé mi contraseña</a>
                     </div>
                 </form>
+                <section class="login__container--social-media">
+                    <div>
+                        <img
+                            src="assets/icons/google-icon.png"
+                            alt="Logo de google"
+                        />
+                        Inicia sesión con Google
+                    </div>
+                    <div>
+                        <img
+                            src="assets/icons/twitter-icon.png"
+                            alt="Logo de twitter"
+                        />
+                        Inicia sesión con Twitter
+                    </div>
+                </section>
+                <p class="login__container--register">
+                    No tienes ninguna cuenta <a href="/">Registrate</a>
+                </p>
             </section>
         </section>
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaración de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
     </body>
 </html>

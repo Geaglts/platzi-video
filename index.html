@@ -9,107 +9,8 @@
             href="https://fonts.googleapis.com/css?family=Muli&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="styles/main.css" />
     </head>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-            outline: none;
-        }
-
-        body {
-            font-family: "Muli", sans-serif;
-            background-color: #8f57fd;
-        }
-
-        .header {
-            width: 100%;
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .header__img {
-            width: 200px;
-            margin: 3px 0 0 10px;
-        }
-
-        .header__menu {
-            margin-right: 30px;
-        }
-
-        .header__menu--profile {
-            margin-right: 8px;
-            width: 40px;
-            display: flex;
-            margin-right: 45px;
-            align-items: center;
-            color: white;
-        }
-
-        .header__menu--profile img {
-            margin-right: 10px;
-        }
-
-        .header__menu ul {
-            display: none;
-            list-style: none;
-            position: absolute;
-            width: 100px;
-            text-align: right;
-            margin-top: -10px;
-        }
-
-        .header__menu:hover ul,
-        ul:hover {
-            display: block;
-        }
-
-        .header__menu li {
-            margin: 10px 0;
-        }
-
-        .header__menu li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .header__menu li a:hover {
-            text-decoration: underline;
-        }
-
-        .main {
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .main__title {
-            color: white;
-            font-size: 25px;
-            margin-bottom: 20px;
-        }
-
-        .input {
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 2px solid #fff;
-            border-radius: 25px;
-            color: white;
-            font-size: 16px;
-            font-family: "Muli", sans-serif;
-            height: 50px;
-            padding: 0 20px;
-            width: 70%;
-        }
-
-        ::placeholder {
-            color: white;
-        }
-    </style>
     <body>
         <header class="header">
             <img
@@ -133,7 +34,327 @@
         </header>
         <section class="main">
             <h2 class="main__title">¿Qué quieres ver hoy?</h2>
-            <input class="input" type="text" placeholder="Buscar..." />
+            <input class="main__input" type="text" placeholder="Buscar..." />
         </section>
+
+        <h2 class="categoies__title">Mi lista</h2>
+
+        <section class="carousel">
+            <div class="carousel__container">
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h2 class="categoies__title">Nuevos videos</h2>
+
+        <section class="carousel">
+            <div class="carousel__container">
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        class="carousel-item__img"
+                        src="https://images.pexels.com/photos/4126133/pexels-photo-4126133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="Persona en una terraza"
+                    />
+                    <div class="carousel-item__details--container">
+                        <div class="carousel-item__details">
+                            <img
+                                src="assets/icons/play-icon.png"
+                                alt="Icono de play"
+                            />
+                            <img
+                                src="assets/icons/plus-icon.png"
+                                alt="Icono de mas"
+                            />
+                            <p class="carousel-item__details--title">
+                                Título descriptivo
+                            </p>
+                            <p class="carousel-item__details--subtitle">
+                                2019 16+ 114 minutos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="/">Términos de uso</a>
+            <a href="/">Declaración de privacidad</a>
+            <a href="/">Centro de ayuda</a>
+        </footer>
     </body>
 </html>
